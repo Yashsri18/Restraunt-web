@@ -1,0 +1,141 @@
+<%-include('../partials/header.ejs') %>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Royality<span class="span">.</span></a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="nav-item">
+            <a href="/" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          
+
+          <li class="nav-item">
+            <a href="#contact-us" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+      <!--   <button id="login" class="btn btn-hover"> <a href="/signin"> Login </a></button>
+        <button class="btn btn-hover"> <a href="/signup"> Sign Up </a></button> -->
+
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+  <body id="top">
+    <main>
+      <article>
+        <section class="hero" id="home" style="background-image: url('../assets/images/background.jpg')">
+          <div class="signup-center">
+            <h1 class="signup-heading">  Sign Up </h1>
+            <form class="signup-form" action="/empdata" method="POST">
+                <!-- class named "container" is assigned to div -->
+                <div class="container-signup">
+                
+                  <p>Kindly fill in this form to register.</p>
+                  <!-- <label for="username"><b>Username</b></label> -->
+                  <input
+                    type="text"
+                    placeholder="Enter username"
+                    name="name"
+                    id="username"
+                    required
+                  />
+          
+                  <!-- <label for="email"><b>Email</b></label> -->
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+          
+                 <!--  <label for="pwd"><b>Password</b></label> -->
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="password"
+                    id="pwd"
+                    required
+                  />
+          
+                 <!--  <label for="pwd-repeat"><b>Repeat Password</b></label> -->
+                  <input
+                    type="password"
+                    placeholder="Repeat Password"
+                    name="cpassword"
+                    id="pwd-repeat"
+                    required
+                  />
+          
+                  <button type="submit" class="btn btn-hover"><!-- <a href="/menu"> -->Register <!-- </a> --></button>
+                </div>
+          
+                <div > 
+                  <p style="color:  var(--dark-orange);">Already have an account?<a href="/signin">Log in</a>.</p>
+                </div>
+              </form>
+          
+          </div>
+        </section>
+      </article>
+    </main>
+</html>

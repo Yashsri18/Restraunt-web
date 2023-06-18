@@ -1,0 +1,107 @@
+<%-include('../partials/header.ejs') %>
+<style>
+    .hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: 145px 60px;
+  text-align: center;
+
+}
+.container1{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    /* margin: 0 1000px; */
+    border-radius: 10px;
+    /* box-shadow: inset -2px 2px 2px white; */
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+h1 {
+    font-size: 50px;
+}
+.greet{
+font-size: 30px;
+}
+.ok{
+    
+    /* border: 2px solid red; */
+    width: 90px;
+    border-radius: 30px;
+}
+</style>
+</head>
+<body id="top">
+
+    <!-- 
+      - #HEADER
+    -->
+  
+    <header class="header" data-header>
+        <div class="container">
+    
+          <h1>
+            <a href="#" class="logo">Royality<span class="span">.</span></a>
+          </h1>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li class="nav-item">
+                <a href="/" class="navbar-link" data-nav-link>Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="/signin" class="navbar-link" data-nav-link>Menu</a>
+              </li>
+    
+           <!--    <li class="nav-item">
+                <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+              </li>
+     -->
+              
+    
+             <!--  <li class="nav-item">
+                <a href="#contact-us" class="navbar-link" data-nav-link>Contact Us</a>
+              </li> -->
+    
+            </ul>
+          </nav>
+    
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search" data-search-btn>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+    
+            
+    
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+              <span class="line top"></span>
+              <span class="line middle"></span>
+              <span class="line bottom"></span>
+            </button>
+          </div>
+    
+        </div>
+      </header>
+  
+    <body id="top">
+        <main>
+            <article>
+              <section class="hero" id="home" style="background-image: url('../assets/images/background.jpg')">
+               <div class="container1">
+                    <img src="/assets/images/correct.png" alt="" srcset="" style="width: 200px; margin: auto;" >
+                    <h1>AWESOME!</h1>
+                    <div class="greet">
+                    <p>Your order has been placed .</p>
+                    <p class="btn btn-hover ok"><a href="/" style="margin-top: 10px;">OK</a></p>
+                    <p style="font-size: 20px;">Press ok to go to home page  .</p>
+                </div> 
+               </div> 
+              </section>
+            </article>
+          </main>
+        </html>
